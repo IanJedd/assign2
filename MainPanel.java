@@ -6,11 +6,10 @@ import javax.swing.*;
 
 public class MainPanel extends JPanel {
     
-	public MainPanel()
-	{
-		setPreferredSize(new Dimension(600,500));
-		
-		JButton b1 = new JButton("Accountant");
+	public MainPanel() {
+	setPreferredSize(new Dimension(600,500));
+	
+	JButton b1 = new JButton("Accountant");
         JButton b2 = new JButton("El Jefe");
         JButton b3 = new JButton("Dealer");
         JButton b4 = new JButton("Manufacturer");
