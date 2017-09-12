@@ -1,9 +1,6 @@
 import java.awt.Dimension;
-import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.*;
 
 
@@ -19,12 +16,13 @@ public class MainPanel extends JPanel {
         JButton b4 = new JButton("Manufacturer");
         JButton b5 = new JButton("Muscle");
         
-		b1.addActionListener(new buttonListener());
+	b1.addActionListener(new buttonListener());
         b2.addActionListener(new buttonListener());
         b3.addActionListener(new buttonListener());
         b4.addActionListener(new buttonListener());
         b5.addActionListener(new buttonListener());
-		add(b1);
+	
+	add(b1);
         add(b2);
         add(b3);
         add(b4);
