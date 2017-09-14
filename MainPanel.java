@@ -19,7 +19,7 @@ public class MainPanel extends JPanel {
         b4 = new JButton("Manufacturer");
         b5 = new JButton("Muscle");
         
-		b1.addActionListener(new buttonListener());
+	    b1.addActionListener(new buttonListener());
         b2.addActionListener(new buttonListener());
         b3.addActionListener(new buttonListener());
         b4.addActionListener(new buttonListener());
