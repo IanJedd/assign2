@@ -5,7 +5,7 @@ public class MainFrame {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		MainPanel p = new MainPanel();
 		f.getContentPane().add(p);
-		myFrame.pack();
-		myFrame.setVisible(true);
+		f.pack();
+		f.setVisible(true);
 	}
 }
