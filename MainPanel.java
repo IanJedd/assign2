@@ -9,6 +9,7 @@ public class MainPanel extends JPanel {
     JButton b3;
     JButton b4;
     JButton b5;
+    JButton b6;
 	public MainPanel()
 	{
 		setPreferredSize(new Dimension(600,500));
@@ -18,18 +19,21 @@ public class MainPanel extends JPanel {
         b3 = new JButton("Dealer");
         b4 = new JButton("Manufacturer");
         b5 = new JButton("Muscle");
+        b6 = new JButton("Cake Dealer");
         
 	    b1.addActionListener(new buttonListener());
         b2.addActionListener(new buttonListener());
         b3.addActionListener(new buttonListener());
         b4.addActionListener(new buttonListener());
         b5.addActionListener(new buttonListener());
+        b6.addActionListener(new buttonListener());
         
 		add(b1);
         add(b2);
         add(b3);
         add(b4);
         add(b5);
+        add(b6);
 	}
 	
 	private class buttonListener implements ActionListener {
@@ -46,14 +50,17 @@ public class MainPanel extends JPanel {
                 newFrame(p);
             }
             if (buttonPushed == b3) {
-                p = new DealerPanel();
-                
+                p = new CakeDealerPanel();
+
             }
             if (buttonPushed == b4) {
                 p = new ManufacturerPanel();
             }
             if (buttonPushed == b5) {
                 p = new MusclePanel();
+            }
+            if (buttonPushed == b6) {
+                p = new CakeDealerPanel();
             }
             newFrame(p);
 		}
