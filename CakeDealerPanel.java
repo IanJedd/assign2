@@ -6,7 +6,7 @@ public class CakeDealerPanel extends JPanel
     public CakeDealerPanel()
     {
         String name = "<html>Name -<br/>&emsp;Matt Kelly</html>";
-        String job = "<html>Job -<br/>&emsp;You need cake? I have cake.</html>.";
+        String job = "<html>Job -<br/>&emsp;You need cake? I have cake.</html>";
         String education = "<html>Education -<br/>&emsp;I've read everything except The Art of the Deal.</html>";
 
         JLabel nameLabel = new JLabel(name);
